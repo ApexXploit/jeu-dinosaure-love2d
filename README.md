@@ -34,6 +34,19 @@ Votre jeu doit comporter :
 
 Le personnage ne doit pas pouvoir effectuer un deuxième saut lorsqu'il est déjà dans les airs.
 
+## Besoin d'aide ?
+
+Choisissez seulement le niveau d'aide dont vous avez besoin :
+
+| Niveau | Ressource | Quand l'utiliser |
+|---|---|---|
+| 1 | [FICHE-AIDE.md](FICHE-AIDE.md) | Pour comprendre une notion ou obtenir un petit indice |
+| 2 | [GUIDE-PAS-A-PAS.md](GUIDE-PAS-A-PAS.md) | Pour construire le jeu étape par étape avec des tests |
+| 3 | [DEPANNAGE.md](DEPANNAGE.md) | Quand le jeu affiche une erreur ou se comporte mal |
+| 4 | [correction/main.lua](correction/main.lua) | En dernier recours, pour comparer avec une version fonctionnelle |
+
+Conseil : ne remplacez pas immédiatement votre fichier par la correction. Comparez une seule fonction, comprenez la différence, puis corrigez votre propre code.
+
 ## Démarrage
 
 1. Installez [LÖVE2D](https://love2d.org/).
@@ -53,6 +66,18 @@ Sur macOS, si la commande `love` n'est pas disponible :
 ```
 
 Vous pouvez consulter [FICHE-AIDE.md](FICHE-AIDE.md) si vous êtes bloqué. Essayez chaque étape avant de regarder l'indice suivant.
+
+### Télécharger sans utiliser Git
+
+Sur GitHub, cliquez sur **Code**, puis **Download ZIP**. Décompressez le fichier avant de l'ouvrir.
+
+### Cloner avec Git
+
+```bash
+git clone https://github.com/ApexXploit/jeu-dinosaure-love2d.git
+cd jeu-dinosaure-love2d
+love .
+```
 
 ## Ordre de réalisation conseillé
 
@@ -89,3 +114,15 @@ Vous pouvez consulter [FICHE-AIDE.md](FICHE-AIDE.md) si vous êtes bloqué. Essa
 
 Déposez votre projet complet selon la méthode indiquée par le formateur. Avant de le rendre, vérifiez que la commande `love .` lance le jeu sans erreur.
 
+### Checklist avant le rendu
+
+- [ ] Le jeu se lance sans message d'erreur.
+- [ ] Le personnage est posé sur le sol au démarrage.
+- [ ] `Espace` fait sauter le personnage.
+- [ ] Il est impossible de sauter une deuxième fois en l'air.
+- [ ] L'obstacle se déplace de droite à gauche.
+- [ ] L'obstacle revient après avoir quitté l'écran.
+- [ ] Une collision affiche « Game Over ».
+- [ ] Le score s'arrête après la collision.
+- [ ] `R` recommence une partie complète.
+- [ ] Le code est indenté, lisible et commenté.
